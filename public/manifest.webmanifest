@@ -20,7 +20,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/jsproj/index.html",
+  "start_url": "/index.html",
   "background_color": "#fda085",
   "display": "standalone",
   "scope": "./",

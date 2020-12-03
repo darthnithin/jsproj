@@ -1,10 +1,16 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/jsproj/',
-  '/jsproj/style.css',
-  '/jsproj/app.js',
-  '/jsproj/index.html',
-  '/jsproj/Roboto-Regular.ttf'
+  '/',
+  '/style.css',
+  '/app.js',
+  '/index.html',
+  '/Roboto-Regular.ttf',
+  '/192.png',
+  '/register-sw.js',
+  '/manifest.webmanifest',
+  '/maskable_icon.png',
+  '/firebasestuff.js',
+
 ];
 
 self.addEventListener('install', function(event) {
