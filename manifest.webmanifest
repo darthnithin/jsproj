@@ -14,10 +14,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/jsproj/index.html",
   "background_color": "#fda085",
   "display": "standalone",
-  "scope": "/",
+  "scope": "./",
   "theme_color": "#fda085",
   "prefer_related_applications": true
 }
