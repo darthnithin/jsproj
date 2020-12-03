@@ -20,18 +20,22 @@ form{
     display: flex;
     justify-content: center;
 }
-@media (max-width: 640px) {
+@media (max-width: 627px) {
     form{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+    
 
 }
-@media (min-width: 640px) {
+@media (min-width: 627px) {
     form{
         display: flex;
         flex-direction: row;
+    }
+    .border {
+        padding: 1vh;
     }
 }
 header{
@@ -56,6 +60,7 @@ form button {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 form button:hover{
     background: #fda085;
     color: white;
