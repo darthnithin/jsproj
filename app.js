@@ -76,6 +76,14 @@ function deleteCheck(e){
 }
 function filterTodo(e){
     const todos = todolist.childNodes;
+    console.log(e.target);
+/*     Need to fix!
+    if(e.target.classList.contains("filter-todo")){
+        document.querySelector(".select").setAttribute("style", "border-bottom-left-radius: 0px;");
+    }
+    else {
+        document.querySelector(".select").setAttribute("style", "border-radius: 5px;");
+    } */
     todos.forEach(function(todo){
         switch(e.target.value){
             case "all":
