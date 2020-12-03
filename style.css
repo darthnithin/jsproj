@@ -8,14 +8,40 @@ body{
     color: white;
     font-family: "Roboto", sans-serif;
     min-height: 10vh;
+    
+}
+h1 {
+    text-align: center;
+}
+.todo-input{
+   max-width: 80vw;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 640px) {
+    form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+@media (min-width: 640px) {
+    form{
+        display: flex;
+        flex-direction: row;
+    }
 }
 header{
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
 }
 header,form{
     min-height: 20vh;
-    display: flex;
-    justify-content: center;
+
     align-items: center;
 }
 form input, form button {
@@ -74,7 +100,7 @@ form button:hover{
     background: #65e81a;
 }
 .todo-item {
-    padding: 0remp 0.5rem;
+    padding: 0rem 0.5rem;
 }
 
 .fa-trash, .fa-check {
@@ -100,7 +126,7 @@ select{
     border: none;
 }
 .select{
-    margin: 1rem;
+
     position: relative;
     overflow: hidden;
 }
@@ -125,3 +151,4 @@ select {
     color: #ff6f47;
 }
 
+/*accecebility stuuf */
