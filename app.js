@@ -1,18 +1,13 @@
-if('serviceWorker' in navigator) {
-    let registration;
-  
-    const registerServiceWorker = async () => {
-      registration = await          navigator.serviceWorker.register('./service-worker.js');
-    };
-  
-    registerServiceWorker();
-  }
+
 //Selectors
+const logo = document.querySelectorAll('#logo path');
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todolist = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
-
+for(let i = 0; i < logo.length; i++) {
+    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+}
 //Event Listeners
 document.addEventListener('DOMContentLoaded', getTodos);
 todoButton.addEventListener('click', addTodo);

@@ -156,4 +156,61 @@ select {
     color: #ff6f47;
 }
 
-/*accecebility stuuf */
+#logo {
+    
+}
+#logo path:nth-child(1){
+    stroke-dasharray: 363px;
+    stroke-dashoffset: 363;
+    animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 398;
+    stroke-dashoffset: 398;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 89;
+    stroke-dashoffset: 89;
+    animation: line-anim 2s ease forwards 0.6s;
+
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 542;
+    stroke-dashoffset: 542;
+    animation: line-anim 2s ease forwards 0.9s;
+
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 398;
+    stroke-dashoffset: 398;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 328;
+    stroke-dashoffset: 328;
+    animation: line-anim 2s ease forwards 1.5s;
+
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 226;
+    stroke-dashoffset: 226;
+    animation: line-anim 2s ease forwards 1.8s;
+
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 409;
+    stroke-dashoffset: 409;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 292;
+    stroke-dashoffset: 292;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
