@@ -8,20 +8,27 @@ body{
     color: white;
     font-family: "Roboto", sans-serif;
     min-height: 10vh;
-    
 }
 h1 {
     text-align: center;
 }
 .todo-input{
-   max-width: 80vw;
+   max-width: 80vh;
    border-top-left-radius: 5px;
    border-bottom-left-radius: 5px;
+   height: 53px;
+   min-height: 53px;
+}
+textarea {
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    
 }
 form{
     display: flex;
     justify-content: center;
-    
+    align-items: start;
+    margin-bottom: 8vh;
 }
 @media (max-width: 610px) {
     form{
@@ -46,17 +53,18 @@ header{
     display: flex;
     justify-content: center;
 }
-header,form{
+header{
     min-height: 20vh;
 
     align-items: center;
 }
-form input, form button {
+form .todo-input, form button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background-color: white;
 }
+
 form button {
     color: #fda085;
     background: white;

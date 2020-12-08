@@ -11,12 +11,32 @@ for(let i = 0; i < logo.length; i++) {
 //Event Listeners
 document.addEventListener('DOMContentLoaded', getTodos);
 todoButton.addEventListener('click', addTodo);
+
 todolist.addEventListener('click', deleteCheck);
 todolist.addEventListener('click', checkCheck);
 filterOption.addEventListener('click', filterTodo);
 /* filterOption.addEventListener('click', savecheckmark); */
 //Functions
-
+function keybind () {
+    let pressed = new Set();
+    let codes = ["Enter", "ShiftLeft"];
+    todoInput.addEventListener('keydown', trigger);
+    function trigger(e) {
+        pressed.add(e.code);
+        if (!pressed.has("Enter")) {
+            return;
+        }
+        if (pressed.has("ShiftLeft")) {
+            return;
+        }
+        pressed.clear();
+        addTodo(e);
+    }
+    todoInput.addEventListener('keyup', e => {
+        pressed.delete(e.code);
+    });
+}
+keybind();
 function addTodo(event){
     //prevent form from submitting
     event.preventDefault();
