@@ -102,10 +102,12 @@ form button:hover{
     transition: all 0.5s ease;
     max-width: 80vh;
     border-radius: 5px;
+    
 }
 
 .todo li {
     flex: 1;
+    max-width: 70vh;
 }
 .del-btn, .complete-btn {
     background: #ff6f47;
@@ -125,6 +127,8 @@ form button:hover{
 }
 .todo-item {
     padding: 0rem 0.5rem;
+    overflow-wrap: break-word;
+    
 }
 
 .fa-trash, .fa-check {
